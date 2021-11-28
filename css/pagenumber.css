@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+	.pagenumber li{
+		display:inline-table;
+		width:40px;
+		height:40px;
+		font-size:20px;
+		background-color: #FFF;
+		line-height:40px;
+		margin-top:5px;
+		border: #000 solid 2px;
+		border-radius: 50%;
+		font-weight:bolder;
+		
+	}
+	.pagenumber li:hover{
+		background-color:#000;
+		color:#FFF;
+	}
+	.pagenumber a:hover{
+		background-color:#000;
+		color: #FFF;
+	}
+	.pagenumber a:active {
+		padding:6px 6px 5px;
+		margin:2px;
+		text-decoration:none; 
+		color:#FFF;
+	}
+

@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+.list-social{
+	font-size:35px;
+	background-color:#131921;
+	margin-left:1350px;
+	margin-top:-30px;
+	width:8%;
+	height:30px;
+	justify-content:space-between;
+}
+.list-social i{
+	color:#06F;
+}
+.list-social:hover i{
+	color:#FFF;
+}
+.icons-admin{
+	font-size:35px;
+	background-color:#131921;
+	margin-left:1100px;
+	margin-top:-150px;
+	width:10%;
+	height:30px;
+	display:flex;
+	justify-content:space-between;
+
+}
+.icons-admin:hover i{
+	color:#FFF;
+}
+
+	

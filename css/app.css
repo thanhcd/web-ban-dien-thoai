@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	position: relative;
+	background-size:cover;
+	background-position-y:-100px;
+}
+#header{
+	background-color:#131921;
+	 
+	 
+}
+.container{
+	max-width:600px;
+	margin:0px auto;
+}
+nav{
+	display:flex; /*trên cùng 1 hàng*/
+	justify-content:space-between;
+	justify-items:center;
+}
+/*
+logo{
+	padding:5px 0px;
+}
+#logo img{
+	max-width:70px;
+	height:auto;
+}
+*/
+#main-menu{
+	display:flex;
+	list-style:none; /*mất dấu . */
+	margin:0;
+	padding:0;
+}
+#main-menu li {
+	position:relative; /*để nó làm chuẩn*/
+}
+#main-menu li a{
+	color:#FFF;
+	display:block;
+	padding:25px 10px;
+	text-decoration:none; /*bỏ gạch chân*/	
+	font-size:20px;
+	font-weight:bold;
+	justify-content:space-between;
+}
+#main-menu ul.sub-menu{
+	position:absolute;
+	background-color:#131921;
+	padding:15px 0px;
+	list-style:none;
+	width:200px;
+	border:1px solid  #434343;
+	display:none; /*ẩn menu con*/
+}
+#main-menu li:hover>ul.sub-menu{ /*khi hover chuột vào li sẽ xuất hiện sub-menu*/ /* >ul.sub-menu những cái trực tiếp(đưa chuột vào menu cha mới hiện menu con)*/
+	display:block; 
+}
+#main-menu ul.sub-menu a{
+	padding:8px 15px;
+	border-bottom:1px solid #434343;
+}
+#main-menu ul.sub-menu li:hover>a{
+	border-bottom:1px solid #6e6e6e;
+}
+#main-menu ul.sub-menu li:last-child a{
+	border:none;
+}
+/*Thiết lập boder cho khi hover*/
+#main-menu>li>a{
+	position:relative; /*lấy menu cha làm chuẩn*/
+}
+#main-menu>li>a:before{ /*dấu màu đỏ dưới chữ*/
+	content:"";
+	height:4px;
+	width:0px;
+	background:#F00;
+	bottom:0px; /*dấu màu cam nằm bên dưới*/
+	left:0px; /*để dấu màu cam không bị lệch*/
+	position:absolute;
+	transition:0.25s cubic-bezier(0.075,0.82,0.165,1); /*thời gian nó hiện ra*/
+}
+#main-menu>li:hover>a:before{
+	display:block;
+	width:100%;
+}
+#main-menu .sub-menu li:hover>a{
+	color:crimson;
+}
+/*menu khi cuộn*/
+#toggle{
+	background-color:#131921; /*nền của nút 3 gạch*/
+	color:#FFF; /*nút 3 gạch màu trắng*/	
+	text-align:right; /*để nút bên phải*/
+	padding:10px; /*cách trái, phải 10px*/
+	font-size:20px;*/
+	cursor:pointer;/*để phân biệt chỗ nào có thể bấm*/
+	display:none; /* ẩn nút 3 gạch*/
+}
+
+@media screen and (max-width: 768px){
+	#main-menu{
+		display:block;
+		text-align:center;
+	}
+	#toggle{
+		display:block;
+	}
+	nav{
+		display:none; /*ẩn menu*/
+	}
+	#main-menu li:hover>a{
+		background-color:#c23616;
+		transition:all 0.3s;
+	}
+}
+
+/* Popup */
+.popup {
+	z-index: 10000;
+    display: none;
+	position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffffd1;
+    justify-content: center;
+}
+.popup.active {
+	display: flex;
+}
+
+.popup .popup-content {
+	position: relative;
+	background: white;
+    width: 90%;
+    margin: 10px 0px;
+	overflow-y: auto;
+	max-height: 100vh;
+}
+
+.popup .button-close-popup {
+	position: absolute;
+	top: 2px;
+	right: 0;
+	text-align: center;
+}
+.popup .button-close-popup span {
+	padding: 10px;
+	cursor: pointer;
+}
+
+/* END popup */

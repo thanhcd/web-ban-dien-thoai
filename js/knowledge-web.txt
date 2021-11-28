@@ -1,0 +1,36 @@
+input => the input
+.color input => the input co the cha la the co class color
+#color input => the input co the cha la the co id color
+input.btn-color => tat ca the input co class la btn-color
+input#btn-color => tat ca the input co id la btn-color
+
+quy tac: 
+- class la gom nhom element
+- id la de xac dinh action (duy nhat 1)
+
+Jquery
+
+$(document).on({{action}}, element, function() {
+
+})
+
+Ex: action in [click, press, keypressup, keypressdown, ...]
+
+$(document).on('click', '.change-color', function() {
+ console.log('da click')
+})
+
+
+$(this) == lay ban3 than cua element
+
+$(document).on('click', '.change-color', function() {
+ console.log($(this).id + ' da click')
+})
+
+
+su dung $(element).click(function() {}) => chi bat truoc su kien loaded
+truoc su kien loaded co 5 nut  click se doi mau
+sau su kien loaded co 2 nut click se doi mau 
+key qua chi co 5 nut click doi mau, 2 ko doi mau
+
+

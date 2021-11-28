@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <title>Untitled Document</title>
+  <link rel="stylesheet" href="css/dt.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/pagenumber.css">
+  <link rel="stylesheet" href="css/gt.css">
+  <link rel="stylesheet" href="css/lienhe.css">
+  <link rel="stylesheet" href="css/iphone.css">
+  <link rel="stylesheet" href="css/chitietsanpham.css">
+
+  <script language="javascript" src="js/java.js"></script>
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body leftmargin="0px" topmargin="0px" rightmargin="0px">
+  <!--<div id="pad">-->
+  <div id="wrapper">
+    <img src="images/logo1.png" alt="Sellphone" style="width:150px; height:150px; margin-left: 100px;margin-top:20px">
+
+    <div class="searchbox">
+      <input type="" placeholder="Search..." />
+      <button class="submit"></button>
+      <div class="line"></div>
+    </div>
+    <div class="icons-admin">
+      <a href="dangnhap.html" <i class="fas fa-user-cog" style="color:#999"></i></a>
+      <a href=""><i class="fas fa-shopping-cart" style="color: #FFF"></i></a>
+    </div>
+    <div class="list-social">
+      <a href=""><i class="fab fa-facebook" style="color:#06F"></i></a>
+      <a href=""><i class="fab fa-instagram" style=" color:#8A3AB9"></i></a>
+      <a href=""><i class="fab fa-twitter" style="color: #1DA1F2"></i></a>
+    </div>
+  </div>
+
+  <!--</div>-->
+  <div id="toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div id="header">
+    <header>
+      <nav class="container">
+        <ul id="main-menu">
+          <li id='tc' onclick="hienthi1(this);"><a href="web.html">TRANG CHỦ</a></li>
+          <li id='dm' onclick="hienthi1(this);"><a href="">DANH MỤC</a>
+            <ul class="sub-menu">
+              <li id='ss' onclick="hienthi1(this);"><a href="#samsung">Samsung</a></li>
+              <li id='op' onclick="hienthi1(this);"><a href="#oppo">Oppo</a></li>
+              <li id='ip' onclick="hienthi1(this);"><a href="#iphone">iPhone</a></li>
+              <li id='vv' onclick="hienthi1(this);"><a href="#vivo">Vivo</a></li>
+            </ul>
+          </li>
+          <li id='gt' onclick="hienthi1(this);"><a href="#gioithieu">GIỚI THIỆU</a></li>
+          <li id='lh' onclick="hienthi1(this);"><a href="#lienhe">LIÊN HỆ</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div id="banner"><img id="img" onClick="changeImage()" src="images/banner4.png" alt=""></div>
+
+  <div id="menu">
+    <div id="left"></div>
+    <div id="content">
+      <div class="khung">
+        <div class="khung1">
+          <div class="chitietsanpham">
+              <li id='SamsungGalaxyA22' onclick="hienThiChiTietSanPham(this);">
+                <p>Xem chi tiết</p>
+              </li>
+            </a></div>
+          <ul class="list-person">
+            <li id='SamsungGalaxyA22' onclick="hienThiChiTietSanPham(this);"><img src="images/samsung.jpg" width="90%" height="270px"
+                style="text-align:center; margin-top:30px"></li></a>
+            <li>
+          </ul>
+          <p>Samsung Galaxy A22</p>
+          <p style="color:#F00">5,490,000 VND</p>
+
+        </div>
+        <div class="khung1">
+          <div class="chitietsanpham">
+              <li id='Iphone12' onclick="hienThiChiTietSanPham(this);">
+                <p>Xem chi tiết</p>
+              </li>
+            </a></div>
+          <ul class="list-person">
+            <li id='Iphone12' onclick="hienThiChiTietSanPham(this);"><img src="images/iphone-12-pro-max-den.jpg" width="90%" height="270px"
+                style="text-align:center; margin-top:30px"></li></a>
+            <li>
+          </ul>
+          <p>Iphone 12</p>
+          <p style="color:#F00">25,490,000 VND</p>
+
+        </div>
+        
+        <div class="khung1">
+          <div class="chitietsanpham">
+            <p>Xem chi tiết</p>
+          </div>
+          <ul class="list-person">
+            <li><a href=""><img src="images/samsung2.jpg" width="94%" height="260px"
+                  style="text-align:center; margin-top:20px;"></a></li>
+          </ul>
+          <p style="margin-top:45px">Samsung Galaxy A52</p>
+          <p style="color:#F00">8,590,000 VND</p>
+        </div>
+        <div class="khung1">
+          <div class="chitietsanpham">
+            <p>Xem chi tiết</p>
+          </div>
+          <ul class="list-person">
+            <li><a href=""><img src="images/oppo1.jpg" width="94%" height="246"
+                  style="text-align:center; margin-top:40px;"></a></li>
+          </ul>
+          <p style="margin-top:45px">Oppo A92 CPH2059 màu đen</p>
+          <p style="color:#F00">6,990,000 VND</p>
+        </div>
+      </div>
+      <div style="width:100%; height:470px; background-color:#FFF; float:left; margin-top:10px;">
+        <div class="khung1">
+          <div class="chitietsanpham">
+            <p>Xem chi tiết</p>
+          </div>
+          <ul class="list-person">
+            <li><a href=""><img src="images/iphone13.jpg" width="90%" height="300px"
+                  style="text-align:center; margin-top:-10px;"></a></li>
+          </ul>
+          <p style="margin-top:30px">Iphone 13 256GB Chính Hãng</p>
+          <p style="color:#F00">26.990.000 VND</p>
+        </div>
+        <div class="khung1">
+          <div class="chitietsanpham">
+            <p>Xem chi tiết</p>
+          </div>
+          <ul class="list-person">
+            <li><a href=""><img src="images/samsung3.jpg" width="95%" height="280px"
+                  style="text-align:center; margin-top:10px;"></a></li>
+          </ul>
+          <p style="margin-top:30px">Samsung Galaxy Z Flip3 5G</p>
+          <p style="color:#F00">23.990.000 VND</p>
+        </div>
+        <div class="khung1">
+          <div class="chitietsanpham">
+            <p>Xem chi tiết</p>
+          </div>
+          <ul class="list-person">
+            <li><a href=""><img src="images/vivo3.jpg" width="90%" height="250px"
+                  style="text-align:center; margin-top:40px;"></a></li>
+          </ul>
+          <p style="margin-top:30px">vivo v20 8GB/128GB Chính Hãng</p>
+          <p style="color:#F00">7,790,000 VND</p>
+        </div>
+        <div class="khung1">
+          <div class="chitietsanpham">
+            <p>Xem chi tiết</p>
+          </div>
+          <ul class="list-person">
+            <li><a href=""><img src="images/oppo2.jpg" width="95%" height="280px"
+                  style="text-align:center; margin-top:0px;"></a></li>
+          </ul>
+          <p style="margin-top:30px">Oppo A5S 32GB Đen</p>
+          <p style="color:#F00">3.990.000 VND</p>
+        </div>
+      </div>
+    </div>
+    <div id="number">
+      <div class="pagenumber">
+        <ul>
+          <li><a href="web.html" class="active">1</li></a>
+          <li><a href="trang2.html" class="active">2</li></a>
+          <li><a href="trang3.html" class="active">3</li></a>
+          <li><a href="web.html" class="active">&raquo;</li></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <br>
+    <div style="width:30%; height:250px; margin-left:80px">
+      <p style="margin-top:10px; color:#FFF; margin-left:30px; top:10px">Địa chỉ cửa hàng</p>
+      <div style="width:40%; height:4px; background-color:#666; margin-left:150px"></div>
+      <br>
+      <p style="margin-top:0px; color:#FFF; margin-left:30px; font-size:17px">Nguyễn Thị Thập Tân Quy Quận 7 TP.HCM</p>
+      <p style="margin-top:0px; color:#FFF; margin-left:30px ; font-size:17px">An Dương Vương Phường 6 Quận 5 TP.HCM</p>
+      <p style="margin-top:0px; color:#FFF; margin-left:-30px ; font-size:17px">Phan văn Trị Quận Gò Vấp TP.HCM</p>
+    </div>
+    <div style=" float:left;width:30%; height:250px; margin-left:550px; margin-top:-253px">
+      <p style="margin-top:10px; color:#FFF; margin-left:30px; top:10px">Liên hệ</p>
+      <div style="width:30%; height:4px; background-color:#666; margin-left:170px"></div>
+      <br>
+      <p style="margin-top:0px; color:#FFF; margin-left:20px ; font-size:17px">Cửa hàng chính: An Dương Vương Phường 6
+        Quận 5 TP.HCM</p>
+      <p style="margin-top:0px; color:#FFF; margin-left:30px ; font-size:17px">SDT: 037598168</p>
+      <p style="margin-top:0px; color:#FFF; margin-left:30px ; font-size:17px">Email: sellphone@gmail.com</p>
+
+      <a href=""><i class="fab fa-facebook" style="color:#06F; margin-left:200px"></i></a>
+      <a href=""><i class="fab fa-instagram" style=" color:#8A3AB9"></i></a>
+      <a href=""><i class="fab fa-facebook-messenger" style=" color:#06F"></i></a>
+      <a href=""><i class="fab fa-twitter" style="color: #1DA1F2"></i></a>
+
+    </div>
+    <div style=" float:left;width:30%; height:250px; margin-left:1020px; margin-top:-253px">
+      <p style="margin-top:10px; color:#FFF; margin-left:30px; top:10px">Thông tin và hướng dẫn</p>
+      <div style="width:30%; height:4px; background-color:#666; margin-left:170px"></div>
+      <br>
+      <p style="margin-top:0px; color:#FFF; margin-left:0px ; font-size:17px">Giới thiệu</p>
+      <p style="margin-top:0px; color:#FFF; margin-left:50px ; font-size:17px">Chế độ bảo hành</p>
+      <p style="margin-top:0px; color:#FFF; margin-left:-10px ; font-size:17px">Đăng ký</p>
+    </div>
+  </div>
+
+  <div class="popup popup-product-detail">
+  </div>
+</body>
+
+</html>
